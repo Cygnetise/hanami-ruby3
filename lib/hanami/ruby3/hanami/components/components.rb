@@ -21,7 +21,7 @@ module Hanami
             if logger_interface?(configuration.logger.first)
               configuration.logger.first
             else
-              kwargs = configuration.logger.last
+              kwargs = configuration.logger.pop
               Hanami::Logger.new(Hanami.environment.project_name, *configuration.logger, **kwargs)
             end
           else
