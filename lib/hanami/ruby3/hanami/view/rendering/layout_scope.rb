@@ -1,10 +1,10 @@
-require 'hanami/utils/basic_object'
+require 'hanami/cyg_utils/basic_object'
 require 'hanami/view/escape'
 
 module Hanami
   module View
     module Rendering
-      class LayoutScope < Utils::BasicObject
+      class LayoutScope < CygUtils::BasicObject
         protected
 
           # Forward all the missing methods to the view scope or to the layout.

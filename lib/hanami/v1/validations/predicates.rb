@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "rdy/logic/predicates"
-require "hanami/utils/class_attribute"
+require "hanami/cyg_utils/class_attribute"
 
 module Hanami
   module Validations
@@ -36,7 +36,7 @@ module Hanami
       def self.included(base)
         base.class_eval do
           include Rdy::Logic::Predicates
-          include Hanami::Utils::ClassAttribute
+          include Hanami::CygUtils::ClassAttribute
 
           class_attribute :messages
           class_attribute :messages_path

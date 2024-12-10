@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "hanami/utils/string"
+require "hanami/cyg_utils/string"
 
 module Hanami
   module V1
@@ -55,7 +55,7 @@ module Hanami
         # @since 0.6.0
         # @api private
         def underscored_name
-          Hanami::Utils::String.underscore(name_without_suffix)
+          Hanami::CygUtils::String.underscore(name_without_suffix)
         end
 
         # @since 0.6.0

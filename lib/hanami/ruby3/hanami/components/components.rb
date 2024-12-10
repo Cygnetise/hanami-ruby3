@@ -5,7 +5,7 @@ module Hanami
     register 'code' do
       run do
         directory = Hanami.root.join('lib')
-        Utils.require!(directory)
+        CygUtils.require!(directory)
       end
     end
 
