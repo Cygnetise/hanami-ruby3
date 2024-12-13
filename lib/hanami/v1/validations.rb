@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "rdy-validation"
-require "hanami/utils/class_attribute"
+require "hanami/cyg_utils/class_attribute"
 require_relative "./validations/namespace"
 require_relative "./validations/predicates"
 require_relative "./validations/inline_predicate"
@@ -52,7 +52,7 @@ module Hanami
         base.class_eval do
           extend ClassMethods
 
-          include Hanami::Utils::ClassAttribute
+          include Hanami::CygUtils::ClassAttribute
           class_attribute :schema
           class_attribute :_messages
           class_attribute :_messages_path
